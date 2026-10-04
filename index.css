@@ -1,0 +1,82 @@
+.buttonStyle{
+    background-color: rgb(223, 115, 115);
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+.btn{
+    color: red;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pstyle{
+    color: green;
+}
+
+.secondp{
+    color: red;
+}
+
+
+
+
+.bdn{
+    background-color: black;
+}
+
+
+.customcss1{
+    height: 100px;
+    width: 100px;
+   color: blue;
+   background-color: burlywood; 
+}
+
+.customcss2{
+    height: 200px;
+    width: 200px;
+   color: rgb(20, 192, 35);
+   background-color: rgb(56, 33, 3); 
+}
+
+.hideh2{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.textStyle{
+    color: aqua;
+}
+
+
+
+
+
+
+
+.theme{
+    background-color: black;
+}
