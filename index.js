@@ -1,6 +1,10 @@
 // // redeclare
 // // reassign
 
+const { useState, useEffect, useLayoutEffect, useRef } = require("react");
+
+// const { useState, useEffect } = require("react");
+
 // let a = "Vinay";
 // a = "Patel"
 
@@ -920,11 +924,13 @@
 // Array Methods 
 // 1. forEach 
 
-// let arr = [1,2,45,6,7,8,9];
+//  let arr = [1,2,45,6,7,8,9];
 
-// arr.forEach(func => {
-// console.log(func*10)
-// })
+// arr.forEach(
+//   func => {
+// console.log(func)
+// }
+// )
 
    
 // forEach main function
@@ -940,23 +946,24 @@
 // Map function -> New Array
 
 // let arr = [1,2,45,6,7,8,9];
-
-// let newMap = arr.map(func => {
+// let newMap = arr.map(
+//   func => {
 //  return func
-// })
-
+// }
+// )
 // console.log(newMap);
 
 // filter -> it satisfy a condition 
 // let arr = [1,2,45,6,7,8,9,3,1];
 // let filterFunc = arr.filter(func => {
-//   return func > 2
+//   return func > 10
 // })
 // console.log(filterFunc)
 
 
+
 // let arr = [1,2,45,6,7,8,9,100];
-// // // Reduce -> perform sum operation and do return one value
+// // // // Reduce -> perform sum operation and do return one value
 
 // let reduceFunc = arr.reduce(
 //   func = (sum , value) => {
@@ -2922,8 +2929,8 @@
 
 
 
-let form = document.querySelector("form");
-let input = document.querySelector("input");
+// let form = document.querySelector("form");
+// let input = document.querySelector("input");
 
 
 // 1. Name
@@ -2952,37 +2959,459 @@ let input = document.querySelector("input");
 
 
 
-let arr = ["first","second","third","fourth","fifth"]
-let orderlist = document.querySelector("ol");
-let showdata = document.getElementById("showdata");
+// let arr = ["first","second","third","fourth","fifth"]
+// let orderlist = document.querySelector("ol");
+// let showdata = document.getElementById("showdata");
 
-let inputData = document.getElementById("letdata");
-let addBtn = document.getElementById("adddata");
+// let inputData = document.getElementById("letdata");
+// let addBtn = document.getElementById("adddata");
 
-function showData(){
-  orderlist.innerText = "";
-arr.forEach((value)=>{
-  let list = document.createElement("li");
-  list.innerText = value;
-  orderlist.append(list);
-})
-}
+// function showData(){
+//   orderlist.innerText = "";
+// arr.forEach((value)=>{
+//   let list = document.createElement("li");
+//   list.innerText = value;
+//   orderlist.append(list);
+// })
+// }
 
-addBtn.onclick = function(){
-  getValue();
-}
+// addBtn.onclick = function(){
+//   getValue();
+// }
 
-function getValue(){
-  let value = inputData.value;
-    arr.push(value);
-    showData();
-    inputData.value = "";
-}
+// function getValue(){
+//   let value = inputData.value;
+//     arr.push(value);
+//     showData();
+//     inputData.value = "";
+// }
 
-showdata.onclick = function(){
-  showData();
-}
+// showdata.onclick = function(){
+//   showData();
+// }
 
+
+
+
+
+
+
+// JAVASCRIPT 
+
+// 1. What is the difference between var, let, and const? 
+// 2. What is hoisting?
+
+// console.log(a);
+// var a = 20;
+
+// function hello(){
+//   console.log("hellowww")
+// }
+// hello();
+
+
+// 3. What is a closure?
+// function outer(){ //
+//   let number = 0;
+//   return function inner(){
+//       number++;
+//       console.log(number)
+//   }
+// }
+
+
+// let result = outer();
+
+// result();
+// result();
+// result();
+// result();
+// result();
+
+
+// 4. What is a callback function?
+// function parent(){
+
+// }
+// parent()
+// foreach(element()= {
+  
+// })
+
+// 5. What is a Promise?
+// modes - > resolve reject pending
+// const promises = new Promise((resolve,reject,pending)=>{
+// let val = false;
+// if(val == true){
+//   resolve("FUNCTION EXECUTED")
+// }else if(val == false){
+//   reject("Function failed")
+// }else{
+// pending("status pending")
+// }
+// })
+
+
+// 6. What is async/await?
+
+// const apicall = async () => {
+
+//   let country = await axios.get("getdata")
+//   console.log(country);
+
+//   let state = await axios.get(`getstates${country.country}`);
+//   console.log(state)
+
+//     let city = await axios.get(`getstates${state.city}`);
+//   console.log(city)
+
+// }
+
+
+//       load balancer
+// worker1 worker2 worker3
+
+// node one Worker
+
+
+// 7. What is the difference between synchronous and asynchronous JavaScript?
+// 8. What is the event loop in JavaScript?
+// call stack
+
+
+// 9. What is the difference between == and ===?
+
+// 10. What is the difference between null and undefined?
+
+// 11. What is the difference between map(), filter(), and reduce()?
+// 12. What is the difference between forEach() and map()?
+// 13. What is destructuring?
+// 14. What is the spread operator?
+// 15. What is the difference between arrow functions and normal functions?
+
+
+// REACT
+// 16. What is React and why do we use it?
+// 17. What is a component? -> 
+// HomePage
+// header nav footer testomonials services
+
+// 18. What are props?
+
+
+// 19. What is state?
+// 20. What is the difference between props and state?
+// 21. What is useState()?
+
+// const [data,setdata] = useState();
+
+// let api  = data;
+// setdata[data];
+
+
+// // 22. What is useEffect()?
+// useEffect(()=>{
+
+// },[])
+
+
+
+
+// 23. How does the dependency array work in useEffect()?
+// 24. What is the Virtual DOM?
+// 25. Why is the key prop used when rendering lists?
+// 26. What is conditional rendering?
+// 27. What is prop drilling?
+// 28. How do you call an API in React?
+// axios fetch
+// 29. What is the difference between controlled and uncontrolled components?
+
+
+// NODE
+// 30. What is Node.js?
+// 31. Why is Node.js used for backend development?
+// 32. How does Node.js handle asynchronous operations?
+// 33. What is the Node.js event loop?
+// 34. What is npm and what is package.json?
+// 35. What is the difference between Node.js and JavaScript?
+
+
+// EXPRESS
+// 36. What is Express.js?
+// 37. Why do we use Express.js with Node.js?
+// 38. What is middleware in Express.js?
+
+// 39. What is the purpose of next()?
+// 40. What is routing in Express.js?
+// model
+// controller 
+
+
+
+// router.get("/getdata",(req,res)=>{
+
+// })
+// routes  /data-services/get/query={data}
+
+// middleware
+// hooks
+// index.js 
+
+// 41. What is a REST API?
+// 42. What is the difference between GET, POST, PUT, PATCH, and DELETE?
+// 43. What is the difference between req.params, req.query, and req.body?
+// 44. What is CORS?
+
+
+
+// 45. How do you handle errors in Express.js?
+
+
+// function savedata(){
+
+// localStorage.setItem("Name","VINAY");
+
+
+// }
+
+
+// savedata();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ====================
+// JAVASCRIPT
+// ====================
+
+// 1. Difference between var, let and const?
+
+// redeclare reassign
+
+// let a = 30;
+// //let a = 30;
+// // a = 40
+// // console.log(a);
+// const b = 20;
+// b = 40;
+// console.log(b)
+
+// 2. What is hoisting?
+
+// sayHello();
+
+// function sayHello(){
+//   console.log("say helllo");
+// }
+
+
+
+// console.log(a);
+
+// let a;
+
+
+// 3. What is a closure?
+
+// function outerFunction(){
+// let count = 0;
+//  return function innerFunction(){
+//   return ++count
+//   }
+// }
+// const countNum = outerFunction();
+// console.log(countNum());
+// console.log(countNum());
+
+
+// 4. What is a Promise?
+// 1. resolve
+// 2. reject
+// 3. pending
+
+// const promiseFunction = new Promise((resolve,reject) => {
+//   let data = true;
+//   if(data){
+//     resolve("resolved")
+//   }else{
+//     reject("rejected")
+//   }
+// })
+
+// console.log(promiseFunction)
+
+
+
+
+// 5. Async/Await?
+
+// let hello  = async () => {
+
+//  const [country,state,city] =  Promise.all( [
+//     axios.get("url"),
+//    axios.get("state"),
+//    axios.get("city")
+//     ])
+// }
+// hello();
+
+
+
+
+// 6. What is the Event Loop?
+
+
+
+// 7. Difference between == and ===?
+// == value
+// === value and type data
+
+// let a = 20;
+// let b = "20"
+// let c = 20;
+
+// if(a == b){
+//   if(a===c){
+//     if(b===c){
+//       if(c===a){
+//         console.log(true);
+//       }else{
+//         console.log(false);
+//       }
+//     }else{
+//       console.log("false")
+//     }
+//   }
+// }
+
+// let a = 10;
+// let b = "10";
+
+// let result = a % b;
+
+// console.log(result);
+// console.log(typeof(result));
+
+
+// 8. null vs undefined?
+
+
+// 9. What are map(), filter() and reduce()?
+
+
+
+// 10. Synchronous vs Asynchronous programming?
+
+// ====================
+// REACT
+// ====================
+
+// 11. What is React?
+
+// 12. What is Virtual DOM?
+
+
+
+// 13. Props vs State?
+
+
+
+// 14. What is useState()?
+// const [value,setValue] = useState()
+// 15. What is useEffect()?
+useEffect(()=>{
+
+},[count])
+
+// 16. What is useRef()?
+// 17. What is React Router?
+// 18. What is Context API?
+// 19. What is Redux?
+// 20. Context API vs Redux?
+// 21. Controlled vs Uncontrolled Components?
+// 22. Why are keys used in React?
+
+// ====================
+// NODE JS
+// ====================
+
+// 23. What is Node.js?
+// 24. How does Node.js work?
+// 25. What is Event Loop in Node.js?
+// 26. What is package.json?
+// 27. What is npm?
+
+// ====================
+// EXPRESS JS
+// ====================
+
+// 28. What is Express.js?
+// 29. What is Middleware?
+// 30. What is REST API?
+// 31. Difference between GET and POST?
+// 32. Difference between PUT and PATCH?
+// 33. What is CORS?
+
+
+// react hooks 
+// useState 
+// lazy 
+// // useEffect
+// useLayoutEffect
+// useRef
+
+// frontend (domain)
+// backend 
+
+// ====================
+// MONGODB
+// ====================
+
+// 34. SQL vs MongoDB?
+// 35. What is a Collection?
+// 36. What is a Document?
+// 37. What is Mongoose?
+// 38. What is Schema?
+// 39. What is Model?
+// 40. What is Aggregation?
+
+// ====================
+// AUTHENTICATION
+// ====================
+
+// 41. What is Authentication?
+// 42. What is Authorization?
+// 43. Authentication vs Authorization?
+// 44. What is JWT?
+// 45. How JWT works?
+// 46. What is bcrypt?
+
+// ====================
+// PROJECT QUESTIONS
+// ====================
+
+// 47. Explain your project.
+// 48. Explain your project architecture.
+// 49. How frontend communicates with backend?
+// 50. How authentication is implemented in your project?
+// 51. Biggest challenge faced in your project?
+// 52. How did you solve a major bug?
+// 53. How do you deploy a MERN application?
+// 54. How would you improve application performance?
+// 55. How do you secure your APIs?
 
 
 

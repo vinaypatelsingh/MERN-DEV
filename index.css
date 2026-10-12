@@ -1,4 +1,4 @@
-.buttonStyle{
+/* .buttonStyle{
     background-color: rgb(223, 115, 115);
     color: white;
 }
@@ -10,11 +10,11 @@
 .btn{
     color: red;
     background-color: yellow;
-}
+} */
 
 
 
-
+/* 
 
 
 
@@ -37,9 +37,9 @@
 
 .bdn{
     background-color: black;
-}
+} */
 
-
+/* 
 .customcss1{
     height: 100px;
     width: 100px;
@@ -69,14 +69,32 @@
 
 .textStyle{
     color: aqua;
-}
+} */
 
 
 
+/* 
 
 
-
-
+*/
 .theme{
     background-color: black;
+} 
+
+
+/* 
+.hedingtext{
+    color: red;
+    background-color: aqua;
+    margin-top: 2rem;
+} */
+
+
+
+
+
+
+button{
+    color: black;
+    background-color: bisque;
 }
